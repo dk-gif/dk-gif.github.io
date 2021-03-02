@@ -47,7 +47,7 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title>python学习笔记</title>
     <url>/2021/03/02/python/</url>
     <content><![CDATA[<h2 id="python-笔记"><a href="#python-笔记" class="headerlink" title="python 笔记"></a>python 笔记</h2><ul>
 <li>1991年出现的python  目前用的是python3.9.1 当前比较新的版本 2x版本不作学习(淘汰)</li>
@@ -134,5 +134,11 @@
 - append() 在后面追加一个
 </code></pre>
 ]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
 </search>
