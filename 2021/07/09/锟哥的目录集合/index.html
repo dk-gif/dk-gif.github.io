@@ -207,7 +207,7 @@
             <h3 id="这里记录的是锟哥每一条对宝贝的留言记录"><a href="#这里记录的是锟哥每一条对宝贝的留言记录" class="headerlink" title="这里记录的是锟哥每一条对宝贝的留言记录"></a>这里记录的是锟哥每一条对宝贝的留言记录</h3><h4 id="2021-06-01"><a href="#2021-06-01" class="headerlink" title="2021-06-01"></a>2021-06-01</h4><p>  这是我们在毕业合影，锟哥1号往返鞍山与瓦房店，跟宝贝的合影留下了美好的记忆<br> <img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="http://m.qpic.cn/psc?/V12Gs3V31cCz12/45NBuzDIW489QBoVep5mcalPuZaAxuXePNHszMKgJDkt.aloMMCJSVtfXvh7bnKn1Oq0G36GmtV2nG11sqaKZPbMfGzYPauZ.QMfQA5uK8s!/b&bo=AAgABgAIAAYBKQ4!&rf=viewer_4"
+                     data-src="http://m.qpic.cn/psc?/V12Gs3V31cCz12/45NBuzDIW489QBoVep5mcalPuZaAxuXePNHszMKgJDkt.aloMMCJSVtfXvh7bnKn1Oq0G36GmtV2nG11sqaKZEGXpVA0CvbT94PyLVX.VO0!/b&bo=AAgABgAIAAYBKQ4!&rf=viewer_4"
                      
                 ></p>
 
@@ -379,23 +379,58 @@
 
     
         <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="tools-item page-aside-toggle">
-                <i class="fas fa-outdent"></i>
-            </li>
-        
+            $li-border-radius = 5px;
+$li-margin-bottom = 12px;
 
-        <!-- go comment -->
-        
-            <li class="go-comment">
-                <i class="fas fa-comment"></i>
-            </li>
-        
-    </ul>
-</div>
+.post-tools-container {
+
+  .tools-list {
+
+    li {
+      cursor: pointer;
+      width: $post-tool-button-width;
+      height: $post-tool-button-width;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: $li-margin-bottom;
+      background: var(--background-color);
+      color: var(--default-text-color);
+
+      i {
+        color: var(--default-text-color);
+      }
+
+      &:hover {
+        background: var(--primary-color);
+        color: var(--background-color);
+
+        i {
+          color: var(--background-color);
+        }
+      }
+
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+
+      hover-style(true, 1.06, 1.06);
+
+      &.page-aside-toggle {
+        display: none;
+
+        +keep-tablet() {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+}
 
         </div>
     
